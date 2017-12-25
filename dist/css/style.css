@@ -1,0 +1,348 @@
+body {
+  padding: 0;
+  margin: 0;
+  min-width: 320px;
+  background-color: #ddd; }
+
+.background {
+  width: 100%;
+  min-height: 250px;
+  background: url("../img/background.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative; }
+
+@-webkit-keyframes move-snowman {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  100% {
+    -webkit-transform: translate(calc(100vw - 150px), 70px) rotate(-15deg);
+            transform: translate(calc(100vw - 150px), 70px) rotate(-15deg); } }
+
+@keyframes move-snowman {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  100% {
+    -webkit-transform: translate(calc(100vw - 150px), 70px) rotate(-15deg);
+            transform: translate(calc(100vw - 150px), 70px) rotate(-15deg); } }
+
+.snowman {
+  position: absolute;
+  left: 0;
+  top: 80px;
+  -webkit-animation-name: move-snowman;
+          animation-name: move-snowman;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+@-webkit-keyframes move-skiing {
+  0% {
+    -webkit-transform: rotate(0deg) translate(74px, 32px);
+            transform: rotate(0deg) translate(74px, 32px); }
+  15% {
+    -webkit-transform: rotate(-20deg) translate(74px, 32px);
+            transform: rotate(-20deg) translate(74px, 32px); }
+  30% {
+    -webkit-transform: rotate(0deg) translate(74px, 32px);
+            transform: rotate(0deg) translate(74px, 32px); }
+  60% {
+    -webkit-transform: rotate(-20deg) translate(74px, 32px);
+            transform: rotate(-20deg) translate(74px, 32px); }
+  75% {
+    -webkit-transform: rotate(0deg) translate(74px, 32px);
+            transform: rotate(0deg) translate(74px, 32px); } }
+
+@keyframes move-skiing {
+  0% {
+    -webkit-transform: rotate(0deg) translate(74px, 32px);
+            transform: rotate(0deg) translate(74px, 32px); }
+  15% {
+    -webkit-transform: rotate(-20deg) translate(74px, 32px);
+            transform: rotate(-20deg) translate(74px, 32px); }
+  30% {
+    -webkit-transform: rotate(0deg) translate(74px, 32px);
+            transform: rotate(0deg) translate(74px, 32px); }
+  60% {
+    -webkit-transform: rotate(-20deg) translate(74px, 32px);
+            transform: rotate(-20deg) translate(74px, 32px); }
+  75% {
+    -webkit-transform: rotate(0deg) translate(74px, 32px);
+            transform: rotate(0deg) translate(74px, 32px); } }
+
+.skiing {
+  -webkit-transform-origin: 98px 25px 0px;
+          transform-origin: 98px 25px 0px;
+  -webkit-animation-name: move-skiing;
+          animation-name: move-skiing;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1; }
+
+@-webkit-keyframes left-leg {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  15% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg); }
+  30% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  60% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg); }
+  75% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+
+@keyframes left-leg {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  15% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg); }
+  30% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  60% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg); }
+  75% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+
+.left-leg {
+  -webkit-animation-name: left-leg;
+          animation-name: left-leg;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1; }
+
+@-webkit-keyframes right-leg {
+  0% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg); }
+  15% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  30% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg); }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  75% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+
+@keyframes right-leg {
+  0% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg); }
+  15% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  30% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg); }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  75% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+
+.right-leg {
+  -webkit-animation-name: right-leg;
+          animation-name: right-leg;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1; }
+
+@-webkit-keyframes move-hands {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  15% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg); }
+  30% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg); }
+  45% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg); }
+  60% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg); }
+  75% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+
+@keyframes move-hands {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  15% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg); }
+  30% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg); }
+  45% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg); }
+  60% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg); }
+  75% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+
+.hand, .glove, .stick, .stick-tip {
+  -webkit-transform-origin: 14px 10px 10px;
+          transform-origin: 14px 10px 10px;
+  -webkit-animation-name: move-hands;
+          animation-name: move-hands;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1; }
+
+@-webkit-keyframes move-left-glove {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  15% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg); }
+  30% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg); }
+  45% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg); }
+  60% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg); }
+  75% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+
+@keyframes move-left-glove {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  15% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg); }
+  30% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg); }
+  45% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg); }
+  60% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg); }
+  75% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+
+.left-glove {
+  -webkit-transform-origin: 14px 10px 10px;
+          transform-origin: 14px 10px 10px;
+  -webkit-animation-name: move-left-glove;
+          animation-name: move-left-glove;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1; }
+
+@-webkit-keyframes move-scarf {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  25% {
+    -webkit-transform: rotate(-35deg);
+            transform: rotate(-35deg); }
+  50% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg); }
+  75% {
+    -webkit-transform: rotate(-35deg);
+            transform: rotate(-35deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+
+@keyframes move-scarf {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  25% {
+    -webkit-transform: rotate(-35deg);
+            transform: rotate(-35deg); }
+  50% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg); }
+  75% {
+    -webkit-transform: rotate(-35deg);
+            transform: rotate(-35deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+
+.scarf {
+  -webkit-transform-origin: 14px 10px 10px;
+          transform-origin: 14px 10px 10px;
+  -webkit-animation-name: move-scarf;
+          animation-name: move-scarf;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1; }
+
+@-webkit-keyframes hidden-track {
+  0% {
+    opacity: 1; }
+  50%, 100% {
+    opacity: 0; } }
+
+@keyframes hidden-track {
+  0% {
+    opacity: 1; }
+  50%, 100% {
+    opacity: 0; } }
+
+.track {
+  -webkit-animation-name: hidden-track;
+          animation-name: hidden-track;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
