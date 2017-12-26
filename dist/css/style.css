@@ -17,16 +17,16 @@ body {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0); }
   100% {
-    -webkit-transform: translate(calc(100vw - 150px), 70px) rotate(-15deg);
-            transform: translate(calc(100vw - 150px), 70px) rotate(-15deg); } }
+    -webkit-transform: translate(calc(100vw - 300px), 70px) rotate(-15deg);
+            transform: translate(calc(100vw - 300px), 70px) rotate(-15deg); } }
 
 @keyframes move-snowman {
   0% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0); }
   100% {
-    -webkit-transform: translate(calc(100vw - 150px), 70px) rotate(-15deg);
-            transform: translate(calc(100vw - 150px), 70px) rotate(-15deg); } }
+    -webkit-transform: translate(calc(100vw - 300px), 70px) rotate(-15deg);
+            transform: translate(calc(100vw - 300px), 70px) rotate(-15deg); } }
 
 .snowman {
   position: absolute;
@@ -34,6 +34,7 @@ body {
   top: 80px;
   -webkit-animation-name: move-snowman;
           animation-name: move-snowman;
+  width: 250px;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   -webkit-animation-iteration-count: 1;
@@ -41,45 +42,109 @@ body {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
-@-webkit-keyframes move-skiing {
+@-webkit-keyframes move-skiing-right {
   0% {
-    -webkit-transform: rotate(0deg) translate(74px, 32px);
-            transform: rotate(0deg) translate(74px, 32px); }
+    -webkit-transform: translate(0px, 0px) rotate(-5deg);
+            transform: translate(0px, 0px) rotate(-5deg); }
   15% {
-    -webkit-transform: rotate(-20deg) translate(74px, 32px);
-            transform: rotate(-20deg) translate(74px, 32px); }
+    -webkit-transform: translate(-5px, -2px) rotate(0deg);
+            transform: translate(-5px, -2px) rotate(0deg); }
   30% {
-    -webkit-transform: rotate(0deg) translate(74px, 32px);
-            transform: rotate(0deg) translate(74px, 32px); }
+    -webkit-transform: translate(0px, 0px) rotate(-5deg);
+            transform: translate(0px, 0px) rotate(-5deg); }
+  45% {
+    -webkit-transform: translate(-5px, -2px) rotate(0deg);
+            transform: translate(-5px, -2px) rotate(0deg); }
   60% {
-    -webkit-transform: rotate(-20deg) translate(74px, 32px);
-            transform: rotate(-20deg) translate(74px, 32px); }
+    -webkit-transform: translate(0px, 0px) rotate(-5deg);
+            transform: translate(0px, 0px) rotate(-5deg); }
   75% {
-    -webkit-transform: rotate(0deg) translate(74px, 32px);
-            transform: rotate(0deg) translate(74px, 32px); } }
+    -webkit-transform: translate(-5px, -2px) rotate(0deg);
+            transform: translate(-5px, -2px) rotate(0deg); }
+  100% {
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+            transform: translate(0px, 0px) rotate(0deg); } }
 
-@keyframes move-skiing {
+@keyframes move-skiing-right {
   0% {
-    -webkit-transform: rotate(0deg) translate(74px, 32px);
-            transform: rotate(0deg) translate(74px, 32px); }
+    -webkit-transform: translate(0px, 0px) rotate(-5deg);
+            transform: translate(0px, 0px) rotate(-5deg); }
   15% {
-    -webkit-transform: rotate(-20deg) translate(74px, 32px);
-            transform: rotate(-20deg) translate(74px, 32px); }
+    -webkit-transform: translate(-5px, -2px) rotate(0deg);
+            transform: translate(-5px, -2px) rotate(0deg); }
   30% {
-    -webkit-transform: rotate(0deg) translate(74px, 32px);
-            transform: rotate(0deg) translate(74px, 32px); }
+    -webkit-transform: translate(0px, 0px) rotate(-5deg);
+            transform: translate(0px, 0px) rotate(-5deg); }
+  45% {
+    -webkit-transform: translate(-5px, -2px) rotate(0deg);
+            transform: translate(-5px, -2px) rotate(0deg); }
   60% {
-    -webkit-transform: rotate(-20deg) translate(74px, 32px);
-            transform: rotate(-20deg) translate(74px, 32px); }
+    -webkit-transform: translate(0px, 0px) rotate(-5deg);
+            transform: translate(0px, 0px) rotate(-5deg); }
   75% {
-    -webkit-transform: rotate(0deg) translate(74px, 32px);
-            transform: rotate(0deg) translate(74px, 32px); } }
+    -webkit-transform: translate(-5px, -2px) rotate(0deg);
+            transform: translate(-5px, -2px) rotate(0deg); }
+  100% {
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+            transform: translate(0px, 0px) rotate(0deg); } }
 
-.skiing {
-  -webkit-transform-origin: 98px 25px 0px;
-          transform-origin: 98px 25px 0px;
-  -webkit-animation-name: move-skiing;
-          animation-name: move-skiing;
+.skiing-right {
+  -webkit-animation-name: move-skiing-right;
+          animation-name: move-skiing-right;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1; }
+
+@-webkit-keyframes move-skiing-left {
+  0% {
+    -webkit-transform: translate(-5px, 0px) rotate(0deg);
+            transform: translate(-5px, 0px) rotate(0deg); }
+  15% {
+    -webkit-transform: translate(0px, 2px) rotate(-5deg);
+            transform: translate(0px, 2px) rotate(-5deg); }
+  30% {
+    -webkit-transform: translate(-5px, 0px) rotate(0deg);
+            transform: translate(-5px, 0px) rotate(0deg); }
+  45% {
+    -webkit-transform: translate(0px, 2px) rotate(-5deg);
+            transform: translate(0px, 2px) rotate(-5deg); }
+  60% {
+    -webkit-transform: translate(-5px, 0px) rotate(0deg);
+            transform: translate(-5px, 0px) rotate(0deg); }
+  75% {
+    -webkit-transform: translate(0px, 2px) rotate(-5deg);
+            transform: translate(0px, 2px) rotate(-5deg); }
+  100% {
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+            transform: translate(0px, 0px) rotate(0deg); } }
+
+@keyframes move-skiing-left {
+  0% {
+    -webkit-transform: translate(-5px, 0px) rotate(0deg);
+            transform: translate(-5px, 0px) rotate(0deg); }
+  15% {
+    -webkit-transform: translate(0px, 2px) rotate(-5deg);
+            transform: translate(0px, 2px) rotate(-5deg); }
+  30% {
+    -webkit-transform: translate(-5px, 0px) rotate(0deg);
+            transform: translate(-5px, 0px) rotate(0deg); }
+  45% {
+    -webkit-transform: translate(0px, 2px) rotate(-5deg);
+            transform: translate(0px, 2px) rotate(-5deg); }
+  60% {
+    -webkit-transform: translate(-5px, 0px) rotate(0deg);
+            transform: translate(-5px, 0px) rotate(0deg); }
+  75% {
+    -webkit-transform: translate(0px, 2px) rotate(-5deg);
+            transform: translate(0px, 2px) rotate(-5deg); }
+  100% {
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+            transform: translate(0px, 0px) rotate(0deg); } }
+
+.skiing-left {
+  -webkit-animation-name: move-skiing-left;
+          animation-name: move-skiing-left;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   -webkit-animation-iteration-count: 1;
@@ -95,10 +160,16 @@ body {
   30% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg); }
-  60% {
+  45% {
     -webkit-transform: rotate(-5deg);
             transform: rotate(-5deg); }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
   75% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg); }
+  100% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg); } }
 
@@ -112,10 +183,16 @@ body {
   30% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg); }
-  60% {
+  45% {
     -webkit-transform: rotate(-5deg);
             transform: rotate(-5deg); }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
   75% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg); }
+  100% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg); } }
 
@@ -137,10 +214,16 @@ body {
   30% {
     -webkit-transform: rotate(-5deg);
             transform: rotate(-5deg); }
-  60% {
+  45% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg); }
+  60% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg); }
   75% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg); } }
 
@@ -154,10 +237,16 @@ body {
   30% {
     -webkit-transform: rotate(-5deg);
             transform: rotate(-5deg); }
-  60% {
+  45% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg); }
+  60% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg); }
   75% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg); } }
 

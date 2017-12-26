@@ -16,7 +16,7 @@ body {
 
 @keyframes move-snowman {
   0% {transform: translate(0,0);}
-  100% {transform: translate(calc(100vw - 150px), 70px) rotate(-15deg);}
+  100% {transform: translate(calc(100vw - 300px), 70px) rotate(-15deg);}
 }
 
 .snowman {
@@ -24,22 +24,40 @@ body {
   left: 0;
   top: 80px;
   animation-name: move-snowman;
+  width: 250px;
   animation-duration: 5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
-@keyframes move-skiing {
-  0% {transform: rotate(0deg) translate(74px, 32px);}
-  15% {transform: rotate(-20deg) translate(74px, 32px);}
-  30% {transform: rotate(0deg) translate(74px, 32px);}
-  60% {transform: rotate(-20deg) translate(74px, 32px);}
-  75% {transform: rotate(0deg) translate(74px, 32px);}
+@keyframes move-skiing-right {
+  0% {transform: translate(0px, 0px) rotate(-5deg)}
+  15% {transform: translate(-5px, -2px) rotate(0deg)}
+  30% {transform: translate(0px, 0px) rotate(-5deg)}
+  45% {transform: translate(-5px, -2px) rotate(0deg)}
+  60% {transform: translate(0px, -0px) rotate(-5deg)}
+  75% {transform: translate(-5px, -2px) rotate(0deg)}
+  100% {transform: translate(0px, 0px) rotate(0deg)}
 }
 
-.skiing {
-  transform-origin: 98px 25px 0px;
-  animation-name: move-skiing;
+.skiing-right {
+  animation-name: move-skiing-right;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes move-skiing-left {
+  0% {transform: translate(-5px, 0px) rotate(0deg)}
+  15% {transform: translate(0px, 2px) rotate(-5deg)}
+  30% {transform: translate(-5px, 0px) rotate(0deg)}
+  45% {transform: translate(0px, 2px) rotate(-5deg)}
+  60% {transform: translate(-5px, 0px) rotate(0deg)}
+  75% {transform: translate(0px, 2px) rotate(-5deg)}
+  100% {transform: translate(0px, 0px) rotate(0deg)}
+}
+
+.skiing-left {
+  animation-name: move-skiing-left;
   animation-duration: 5s;
   animation-iteration-count: 1;
 }
@@ -48,8 +66,10 @@ body {
   0% {transform: rotate(0deg)}
   15% {transform: rotate(-5deg)}
   30% {transform: rotate(0deg)}
-  60% {transform: rotate(-5deg)}
-  75% {transform: rotate(0deg)}
+  45% {transform: rotate(-5deg)}
+  60% {transform: rotate(0deg)}
+  75% {transform: rotate(-5deg)}
+  100% {transform: rotate(0deg)}
 }
 
 .left-leg {
@@ -62,8 +82,10 @@ body {
   0% {transform: rotate(-5deg)}
   15% {transform: rotate(0deg)}
   30% {transform: rotate(-5deg)}
-  60% {transform: rotate(0deg)}
+  45% {transform: rotate(0deg)}
+  60% {transform: rotate(-5deg)}
   75% {transform: rotate(0deg)}
+  100% {transform: rotate(0deg)}
 }
 
 .right-leg {
